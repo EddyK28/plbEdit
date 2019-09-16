@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "plbEdit", "plbEdit\plbEdit.csproj", "{70D3F62B-B210-4FF2-88AF-A61F3FDD08CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70D3F62B-B210-4FF2-88AF-A61F3FDD08CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70D3F62B-B210-4FF2-88AF-A61F3FDD08CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70D3F62B-B210-4FF2-88AF-A61F3FDD08CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70D3F62B-B210-4FF2-88AF-A61F3FDD08CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F1A83185-501A-442B-8640-54717A349499}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wxHexEditor_XML_TAG>
+  <filename path="C:\Users\Elliot\Desktop\3DS Mod\Games\Extracted\Super Mystery Dungeon\RomFS\script\placement_data\abagooranohanashi01.plb">
+    <TAG id="0">
+      <start_offset>64</start_offset>
+      <end_offset>67</end_offset>
+      <tag_text>Size: Pointer List</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#00FFFF</note_colour>
+    </TAG>
+    <TAG id="1">
+      <start_offset>71</start_offset>
+      <end_offset>68</end_offset>
+      <tag_text>Ptr: Pointer List</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#00FF00</note_colour>
+    </TAG>
+    <TAG id="2">
+      <start_offset>72</start_offset>
+      <end_offset>75</end_offset>
+      <tag_text>Ukn: Always 1?</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#FF00FF</note_colour>
+    </TAG>
+    <TAG id="3">
+      <start_offset>76</start_offset>
+      <end_offset>79</end_offset>
+      <tag_text>Size: Ukn List?</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#00FFFF</note_colour>
+    </TAG>
+    <TAG id="4">
+      <start_offset>80</start_offset>
+      <end_offset>83</end_offset>
+      <tag_text>Ptr: Ukn List?</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#00FF00</note_colour>
+    </TAG>
+    <TAG id="5">
+      <start_offset>84</start_offset>
+      <end_offset>87</end_offset>
+      <tag_text>Ukn: Always 1?</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#FF00FF</note_colour>
+    </TAG>
+    <TAG id="6">
+      <start_offset>88</start_offset>
+      <end_offset>91</end_offset>
+      <tag_text>Size: Section List</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#00FFFF</note_colour>
+    </TAG>
+    <TAG id="7">
+      <start_offset>92</start_offset>
+      <end_offset>95</end_offset>
+      <tag_text>Ptr: Section List</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#00FF00</note_colour>
+    </TAG>
+    <TAG id="8">
+      <start_offset>96</start_offset>
+      <end_offset>99</end_offset>
+      <tag_text>Size: Group List</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#00FFFF</note_colour>
+    </TAG>
+    <TAG id="9">
+      <start_offset>100</start_offset>
+      <end_offset>103</end_offset>
+      <tag_text>Ptr: Group List</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#00FF00</note_colour>
+    </TAG>
+    <TAG id="10">
+      <start_offset>104</start_offset>
+      <end_offset>107</end_offset>
+      <tag_text>Size: Layer List</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#00FFFF</note_colour>
+    </TAG>
+    <TAG id="11">
+      <start_offset>108</start_offset>
+      <end_offset>111</end_offset>
+      <tag_text>Ptr: Layer List</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#00FF00</note_colour>
+    </TAG>
+    <TAG id="12">
+      <start_offset>116</start_offset>
+      <end_offset>119</end_offset>
+      <tag_text>List: Section Structs Addrs</tag_text>
+      <font_colour>#E0E0E0</font_colour>
+      <note_colour>#0000FF</note_colour>
+    </TAG>
+    <TAG id="13">
+      <start_offset>120</start_offset>
+      <end_offset>151</end_offset>
+      <tag_text>Section 1</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#FFFF00</note_colour>
+    </TAG>
+    <TAG id="14">
+      <start_offset>152</start_offset>
+      <end_offset>205</end_offset>
+      <tag_text>Str: Section 1 Name</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#FF8000</note_colour>
+    </TAG>
+    <TAG id="15">
+      <start_offset>208</start_offset>
+      <end_offset>243</end_offset>
+      <tag_text>List: Section 1 Item Addrs</tag_text>
+      <font_colour>#E0E0E0</font_colour>
+      <note_colour>#0000FF</note_colour>
+    </TAG>
+    <TAG id="16">
+      <start_offset>244</start_offset>
+      <end_offset>283</end_offset>
+      <tag_text>Section 1, Item 1</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#FFFF00</note_colour>
+    </TAG>
+    <TAG id="17">
+      <start_offset>292</start_offset>
+      <end_offset>331</end_offset>
+      <tag_text>Section 1, Item 2</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#D5D500</note_colour>
+    </TAG>
+    <TAG id="18">
+      <start_offset>336</start_offset>
+      <end_offset>375</end_offset>
+      <tag_text>Section 1, Item 3</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#FFFF00</note_colour>
+    </TAG>
+    <TAG id="19">
+      <start_offset>380</start_offset>
+      <end_offset>419</end_offset>
+      <tag_text>Section 1, Item 4</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#D5D500</note_colour>
+    </TAG>
+    <TAG id="20">
+      <start_offset>424</start_offset>
+      <end_offset>463</end_offset>
+      <tag_text>Section 1, Item 5</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#FFFF00</note_colour>
+    </TAG>
+    <TAG id="21">
+      <start_offset>468</start_offset>
+      <end_offset>507</end_offset>
+      <tag_text>Section 1, Item 6</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#D5D500</note_colour>
+    </TAG>
+    <TAG id="22">
+      <start_offset>512</start_offset>
+      <end_offset>551</end_offset>
+      <tag_text>Section 1, Item 7</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#FFFF00</note_colour>
+    </TAG>
+    <TAG id="23">
+      <start_offset>560</start_offset>
+      <end_offset>599</end_offset>
+      <tag_text>Section 1, Item 8</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#D5D500</note_colour>
+    </TAG>
+    <TAG id="24">
+      <start_offset>604</start_offset>
+      <end_offset>643</end_offset>
+      <tag_text>Section 1, Item 9</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#FFFF00</note_colour>
+    </TAG>
+    <TAG id="25">
+      <start_offset>648</start_offset>
+      <end_offset>1411</end_offset>
+      <tag_text>Section 1 Item Strings</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#FF8000</note_colour>
+    </TAG>
+    <TAG id="26">
+      <start_offset>1412</start_offset>
+      <end_offset>1415</end_offset>
+      <tag_text>List: Section 1 Map Addrs</tag_text>
+      <font_colour>#E0E0E0</font_colour>
+      <note_colour>#0000FF</note_colour>
+    </TAG>
+    <TAG id="27">
+      <start_offset>1416</start_offset>
+      <end_offset>1447</end_offset>
+      <tag_text>Section 1, Map 1</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#FFFF00</note_colour>
+    </TAG>
+    <TAG id="28">
+      <start_offset>1448</start_offset>
+      <end_offset>1527</end_offset>
+      <tag_text>Section 1 Map Strings</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#FF8000</note_colour>
+    </TAG>
+    <TAG id="29">
+      <start_offset>1528</start_offset>
+      <end_offset>1663</end_offset>
+      <tag_text>List: Group Ptrs</tag_text>
+      <font_colour>#E0E0E0</font_colour>
+      <note_colour>#0000FF</note_colour>
+    </TAG>
+    <TAG id="30">
+      <start_offset>1664</start_offset>
+      <end_offset>1699</end_offset>
+      <tag_text>Group 1</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#FFFF00</note_colour>
+    </TAG>
+    <TAG id="31">
+      <start_offset>1700</start_offset>
+      <end_offset>1735</end_offset>
+      <tag_text>Group 2</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#D5D500</note_colour>
+    </TAG>
+    <TAG id="32">
+      <start_offset>1736</start_offset>
+      <end_offset>1771</end_offset>
+      <tag_text>Group 3</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#FFFF00</note_colour>
+    </TAG>
+    <TAG id="33">
+      <start_offset>1772</start_offset>
+      <end_offset>1807</end_offset>
+      <tag_text>Group 4</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#D5D500</note_colour>
+    </TAG>
+    <TAG id="34">
+      <start_offset>1808</start_offset>
+      <end_offset>1843</end_offset>
+      <tag_text>Group 5</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#FFFF00</note_colour>
+    </TAG>
+    <TAG id="35">
+      <start_offset>1844</start_offset>
+      <end_offset>1879</end_offset>
+      <tag_text>Group 6</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#D5D500</note_colour>
+    </TAG>
+    <TAG id="36">
+      <start_offset>1880</start_offset>
+      <end_offset>1915</end_offset>
+      <tag_text>Group 7</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#FFFF00</note_colour>
+    </TAG>
+    <TAG id="37">
+      <start_offset>1916</start_offset>
+      <end_offset>1951</end_offset>
+      <tag_text>Group 8</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#D5D500</note_colour>
+    </TAG>
+    <TAG id="38">
+      <start_offset>1952</start_offset>
+      <end_offset>1987</end_offset>
+      <tag_text>Group 9</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#FFFF00</note_colour>
+    </TAG>
+    <TAG id="39">
+      <start_offset>1988</start_offset>
+      <end_offset>2023</end_offset>
+      <tag_text>Group 10</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#D5D500</note_colour>
+    </TAG>
+    <TAG id="40">
+      <start_offset>2024</start_offset>
+      <end_offset>2059</end_offset>
+      <tag_text>Group 11</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#FFFF00</note_colour>
+    </TAG>
+    <TAG id="41">
+      <start_offset>2060</start_offset>
+      <end_offset>2095</end_offset>
+      <tag_text>Group 12</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#D5D500</note_colour>
+    </TAG>
+    <TAG id="42">
+      <start_offset>2096</start_offset>
+      <end_offset>2131</end_offset>
+      <tag_text>Group 13</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#FFFF00</note_colour>
+    </TAG>
+    <TAG id="43">
+      <start_offset>2888</start_offset>
+      <end_offset>2933</end_offset>
+      <tag_text>Group 1 Strings</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#FF8000</note_colour>
+    </TAG>
+    <TAG id="44">
+      <start_offset>10628</start_offset>
+      <end_offset>10651</end_offset>
+      <tag_text>List: Layer Ptrs</tag_text>
+      <font_colour>#E0E0E0</font_colour>
+      <note_colour>#0000FF</note_colour>
+    </TAG>
+    <TAG id="45">
+      <start_offset>10652</start_offset>
+      <end_offset>10683</end_offset>
+      <tag_text>Layer 1</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#FFFF00</note_colour>
+    </TAG>
+    <TAG id="46">
+      <start_offset>10684</start_offset>
+      <end_offset>10715</end_offset>
+      <tag_text>Layer 2</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#D5D500</note_colour>
+    </TAG>
+    <TAG id="47">
+      <start_offset>10716</start_offset>
+      <end_offset>10747</end_offset>
+      <tag_text>Layer 3</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#FFFF00</note_colour>
+    </TAG>
+    <TAG id="48">
+      <start_offset>10748</start_offset>
+      <end_offset>10779</end_offset>
+      <tag_text>Layer 4</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#D5D500</note_colour>
+    </TAG>
+    <TAG id="49">
+      <start_offset>10780</start_offset>
+      <end_offset>10811</end_offset>
+      <tag_text>Layer 5</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#FFFF00</note_colour>
+    </TAG>
+    <TAG id="50">
+      <start_offset>10812</start_offset>
+      <end_offset>10843</end_offset>
+      <tag_text>Layer 6</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#D5D500</note_colour>
+    </TAG>
+    <TAG id="51">
+      <start_offset>10848</start_offset>
+      <end_offset>10985</end_offset>
+      <tag_text>Layer Strings</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#FF8000</note_colour>
+    </TAG>
+    <TAG id="52">
+      <start_offset>10988</start_offset>
+      <end_offset>10991</end_offset>
+      <tag_text>Thing</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#FF0000</note_colour>
+    </TAG>
+    <TAG id="53">
+      <start_offset>10992</start_offset>
+      <end_offset>10995</end_offset>
+      <tag_text>Thing</tag_text>
+      <font_colour>#000000</font_colour>
+      <note_colour>#FF0000</note_colour>
+    </TAG>
+  </filename>
+</wxHexEditor_XML_TAG>

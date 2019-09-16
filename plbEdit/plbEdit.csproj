@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{70D3F62B-B210-4FF2-88AF-A61F3FDD08CE}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>plbEdit</RootNamespace>
+    <AssemblyName>plbEdit</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\PLBControlBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\PLBControlBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PLBControlGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PLBControlGroup.Designer.cs">
+      <DependentUpon>PLBControlGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PLBControlGroupref.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PLBControlGroupref.Designer.cs">
+      <DependentUpon>PLBControlGroupref.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PLBControlGroupSection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PLBControlGroupSection.Designer.cs">
+      <DependentUpon>PLBControlGroupSection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PLBControlItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PLBControlItem.Designer.cs">
+      <DependentUpon>PLBControlItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PLBControlLayer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PLBControlLayer.Designer.cs">
+      <DependentUpon>PLBControlLayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PLBControlMap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PLBControlMap.Designer.cs">
+      <DependentUpon>PLBControlMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PLBControlSection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PLBControlSection.Designer.cs">
+      <DependentUpon>PLBControlSection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Format\PLB.cs" />
+    <Compile Include="MessagePrinter.cs" />
+    <Compile Include="PlbEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlbEdit.Designer.cs">
+      <DependentUpon>PlbEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\PLBControlGroup.resx">
+      <DependentUpon>PLBControlGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PLBControlGroupref.resx">
+      <DependentUpon>PLBControlGroupref.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PLBControlGroupSection.resx">
+      <DependentUpon>PLBControlGroupSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PLBControlItem.resx">
+      <DependentUpon>PLBControlItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PLBControlLayer.resx">
+      <DependentUpon>PLBControlLayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PLBControlMap.resx">
+      <DependentUpon>PLBControlMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PLBControlSection.resx">
+      <DependentUpon>PLBControlSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlbEdit.resx">
+      <DependentUpon>PlbEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
