@@ -122,7 +122,7 @@ namespace plbEdit
 
         private void Menu_File_SaveAs__Click(object sender, EventArgs e)
         {
-            if (pathCurrent != null) pathCurrent = "";
+            if (pathCurrent == null) pathCurrent = "";
             if (data != null)
             {
                 using (SaveFileDialog SaveDlg = new SaveFileDialog())
@@ -285,7 +285,7 @@ namespace plbEdit
 
             PLBNode node = null;
             try { node = (PLBNode)PLBTree.SelectedNode; }
-            catch (Exception ex)
+            catch (Exception)
             {
                 PLBPanel_Button_Save.Enabled = false;
                 PLBPanel_Button_Reset.Enabled = false;

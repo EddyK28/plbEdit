@@ -638,6 +638,9 @@ namespace plbEdit.Format
         [DataMember(Order = 6, EmitDefaultValue = false)]
         protected uint[] extraData;
 
+        [DataMember(Order = 7, EmitDefaultValue = false)]
+        protected uint[] splineData;
+
         protected uint[] buildData;
 
 
@@ -703,9 +706,15 @@ namespace plbEdit.Format
                 extraData[0] = plbReader.ReadUInt32();
             }
 
-            //TODO: handle extra spline data
+            //Read extra-extra spline data
             if (type == "SplineType")
-                MessagePrinter.AddMsg($"Warning: Skipping SplineType Data at 0x{extraData[2]:X8}");
+            {
+                plbReader.BaseStream.Position = extraData[2];
+                splineData = new uint[extraData[1] * 4];
+                for (uint i = 0; i < splineData.Length; i++)
+                    splineData[i] = plbReader.ReadUInt32();
+            }
+                
         }
 
         public uint GetExtraBytes()
@@ -716,17 +725,28 @@ namespace plbEdit.Format
         //Given start of item, caclulate pointers and return end of item
         public uint BuildPtrs(PLBWriter plbWriter, uint offset, uint header)
         {
-            buildData = new uint[3];
-            buildData[0] = offset;                                                  //String 1 Addr
-            buildData[1] = Util.Align(offset + (uint)(type.Length+1) * 2, 8);       //String 2 Addr
-            buildData[2] = Util.Align(buildData[1] + (uint)(id.Length+1) * 2, 8);   //String 3 Addr
+            buildData = new uint[4];
+            buildData[0] = offset;                                                  //String 1 Addr (type)
+            buildData[1] = Util.Align(offset + (uint)(type.Length+1) * 2, 8);       //String 2 Addr (id)
+            buildData[2] = Util.Align(buildData[1] + (uint)(id.Length+1) * 2, 8);   //String 3 Addr (label)
+            buildData[3] = Util.Align(buildData[2] + (uint)(label.Length+1)*2, 4);  //Spline extra-extra data addr
 
             plbWriter.PtrQueue(header + 4);                                         //QUEUE: string 1 pointer pos
             plbWriter.PtrQueue(header + 8);                                         //QUEUE: string 2 pointer pos
             plbWriter.PtrQueue(header + 12);                                        //QUEUE: string 3 pointer pos
             plbWriter.PtrQueue(header + 16);                                        //QUEUE: layer pointer pos
+            
+            //calculate spline data pointers if present
+            if (splineData != null)
+            {
+                plbWriter.PtrQueue(buildData[3]);                                   //QUEUE: spline data pos
+                plbWriter.PtrQueue(buildData[3] + 4);                               //QUEUE: spline data pos +4 (but why?)
+                plbWriter.PtrQueue(buildData[3] + 8);                               //QUEUE: spline data pos +8 (but why?)
+                plbWriter.PtrQueue(header + 48);                                    //QUEUE: spline data pointer pos
+                return buildData[3] + (uint)splineData.Length * 4;                  //return end of spline data
+            }
 
-            return buildData[2] + (uint)(label.Length+1) * 2;                       //Return end of strings
+            else return buildData[2] + (uint)(label.Length + 1) * 2;                //Return end of strings
         }
 
         public void BuildHeader(PLBWriter plbWriter)
@@ -750,8 +770,18 @@ namespace plbEdit.Format
             plbWriter.Write(ukn2);
 
             //Write extra data
-            if (extraData != null) foreach (uint word in extraData)
-                plbWriter.Write(word);
+            if (extraData != null)
+            {
+                //handle pointer in spline extra data
+                if (splineData != null)
+                {
+                    plbWriter.Write(splineData.Length / 4);
+                    plbWriter.Write(splineData.Length / 4);
+                    plbWriter.Write(buildData[3]);
+                }
+                else foreach (uint word in extraData)
+                    plbWriter.Write(word);
+            }
         }
 
         public void Build(BinaryWriter binWriter)
@@ -767,6 +797,14 @@ namespace plbEdit.Format
             //write item label
             Util.Align(binWriter, 8);
             Util.WriteString(binWriter, label);
+
+            //write spline data
+            if (splineData != null)
+            {
+                Util.Align(binWriter, 4);
+                foreach (uint word in splineData)
+                    binWriter.Write(word);
+            }
         }
     }
 
@@ -981,7 +1019,7 @@ namespace plbEdit.Format
 
             buildData[4] = Util.Align(tempOffs, 4);                             //Ukn list Addr
 
-            //TODO: Build pointers for Ukn's
+            //TODO: Build pointers for Ukn's?
             plbWriter.PtrQueue(header + 28);  //QUEUE: Ukn list pointer pos
 
             return tempOffs;
@@ -1546,7 +1584,7 @@ namespace plbEdit.Format
             {
                 return groups[name];
             }
-            catch(Exception e)
+            catch(Exception)
             {
                 MessagePrinter.AddMsg($"Warning: group {name} does not exist");
                 return 0;
