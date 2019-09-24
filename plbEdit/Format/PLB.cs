@@ -636,10 +636,10 @@ namespace plbEdit.Format
         public uint ukn2;
 
         [DataMember(Order = 6, EmitDefaultValue = false)]
-        protected uint[] extraData;
+        public uint[] extraData;
 
         [DataMember(Order = 7, EmitDefaultValue = false)]
-        protected uint[] splineData;
+        public uint[] splineData;
 
         protected uint[] buildData;
 

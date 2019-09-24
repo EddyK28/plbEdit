@@ -47,7 +47,8 @@
             this.PLBControl_Label_Ukn1 = new System.Windows.Forms.Label();
             this.PLBControl_Box_Ukn1 = new plbEdit.Controls.PLBControlBox();
             this.PLBControl_Box_Ukn2 = new plbEdit.Controls.PLBControlBox();
-            this.PLBControl_Label_Warning = new System.Windows.Forms.Label();
+            this.PLBControl_Label_Extra = new System.Windows.Forms.Label();
+            this.PLBControl_Box_Extra = new System.Windows.Forms.TextBox();
             this.PLBControl_Panel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -260,7 +261,7 @@
             this.PLBControl_Box_Ukn1.Location = new System.Drawing.Point(69, 199);
             this.PLBControl_Box_Ukn1.Name = "PLBControl_Box_Ukn1";
             this.PLBControl_Box_Ukn1.Size = new System.Drawing.Size(398, 25);
-            this.PLBControl_Box_Ukn1.TabIndex = 111;
+            this.PLBControl_Box_Ukn1.TabIndex = 8;
             // 
             // PLBControl_Box_Ukn2
             // 
@@ -269,29 +270,47 @@
             this.PLBControl_Box_Ukn2.Location = new System.Drawing.Point(69, 227);
             this.PLBControl_Box_Ukn2.Name = "PLBControl_Box_Ukn2";
             this.PLBControl_Box_Ukn2.Size = new System.Drawing.Size(398, 25);
-            this.PLBControl_Box_Ukn2.TabIndex = 112;
+            this.PLBControl_Box_Ukn2.TabIndex = 9;
             // 
-            // PLBControl_Label_Warning
+            // PLBControl_Label_Extra
             // 
-            this.PLBControl_Label_Warning.AutoEllipsis = true;
-            this.PLBControl_Label_Warning.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PLBControl_Label_Warning.Location = new System.Drawing.Point(0, 252);
-            this.PLBControl_Label_Warning.Name = "PLBControl_Label_Warning";
-            this.PLBControl_Label_Warning.Size = new System.Drawing.Size(470, 33);
-            this.PLBControl_Label_Warning.TabIndex = 11;
-            this.PLBControl_Label_Warning.Text = "Warning: Item contains Extra Data which is not modifiable in GUI yet.";
-            this.PLBControl_Label_Warning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.PLBControl_Label_Warning.Visible = false;
+            this.PLBControl_Label_Extra.AutoEllipsis = true;
+            this.PLBControl_Label_Extra.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PLBControl_Label_Extra.Location = new System.Drawing.Point(0, 252);
+            this.PLBControl_Label_Extra.Name = "PLBControl_Label_Extra";
+            this.PLBControl_Label_Extra.Size = new System.Drawing.Size(470, 28);
+            this.PLBControl_Label_Extra.TabIndex = 11;
+            this.PLBControl_Label_Extra.Text = "Item Extra Data:";
+            this.PLBControl_Label_Extra.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.PLBControl_Label_Extra.Visible = false;
+            // 
+            // PLBControl_Box_Extra
+            // 
+            this.PLBControl_Box_Extra.AcceptsReturn = true;
+            this.PLBControl_Box_Extra.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PLBControl_Box_Extra.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PLBControl_Box_Extra.Location = new System.Drawing.Point(0, 280);
+            this.PLBControl_Box_Extra.Margin = new System.Windows.Forms.Padding(10);
+            this.PLBControl_Box_Extra.MinimumSize = new System.Drawing.Size(4, 24);
+            this.PLBControl_Box_Extra.Multiline = true;
+            this.PLBControl_Box_Extra.Name = "PLBControl_Box_Extra";
+            this.PLBControl_Box_Extra.ReadOnly = true;
+            this.PLBControl_Box_Extra.Size = new System.Drawing.Size(470, 24);
+            this.PLBControl_Box_Extra.TabIndex = 12;
+            this.PLBControl_Box_Extra.Visible = false;
+            this.PLBControl_Box_Extra.WordWrap = false;
+            this.PLBControl_Box_Extra.TextChanged += new System.EventHandler(this.Box_Extra__TextChanged);
             // 
             // PLBControlItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.Controls.Add(this.PLBControl_Label_Warning);
+            this.Controls.Add(this.PLBControl_Box_Extra);
+            this.Controls.Add(this.PLBControl_Label_Extra);
             this.Controls.Add(this.PLBControl_Panel);
             this.Name = "PLBControlItem";
-            this.Size = new System.Drawing.Size(470, 300);
+            this.Size = new System.Drawing.Size(470, 310);
             this.PLBControl_Panel.ResumeLayout(false);
             this.PLBControl_Panel.PerformLayout();
             this.ResumeLayout(false);
@@ -311,7 +330,7 @@
         private System.Windows.Forms.Label PLBControl_Label_PosY;
         private System.Windows.Forms.Label PLBControl_Label_Ukn2;
         private System.Windows.Forms.Label PLBControl_Label_Ukn1;
-        private System.Windows.Forms.Label PLBControl_Label_Warning;
+        private System.Windows.Forms.Label PLBControl_Label_Extra;
         private PLBControlBox PLBControl_Box_Id;
         private PLBControlBox PLBControl_Box_Type;
         private PLBControlBox PLBControl_Box_Label;
@@ -321,5 +340,6 @@
         private PLBControlBox PLBControl_Box_PosZ;
         private PLBControlBox PLBControl_Box_Ukn1;
         private PLBControlBox PLBControl_Box_Ukn2;
+        private System.Windows.Forms.TextBox PLBControl_Box_Extra;
     }
 }
